@@ -6,14 +6,16 @@
 * {
     margin: 0;
     padding: 0;
-    
+    /* margin-block-start: 0; */
+    /* overflow-x: hidden; */
+
 }
 
 body {
     background-color: #E4E6F1;
     font-family: Inter;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* padding: 10px 0px; */
 }
 
@@ -54,7 +56,7 @@ body {
     gap: 24px;
 }
 
-.slider-img{
+.slider-img {
     width: 100%;
     object-fit: cover;
 }
@@ -62,7 +64,7 @@ body {
 .slider-item {
     width: 90vw;
     min-height: 620px;
-    max-height: 600px;
+    max-height: 500px;
     box-sizing: border-box;
     /* background-color: red; */
     background-color: #E7FAFE;
@@ -71,7 +73,7 @@ body {
     border-radius: 50px;
 }
 
-.slider-time-name-info{
+.slider-time-name-info {
     width: 120px;
     height: 25px;
     padding: 0px 5px;
@@ -89,13 +91,19 @@ body {
     min-height: 630px;
 }
 
-.checked-img{
+.checked-img {
     position: absolute;
     width: 100px;
     height: 100px;
     top: 15px;
-    right: 40vw;
+    right: 600px;
 
+}
+
+.row {
+    /* background-color: red; */
+    box-sizing: border-box;
+    width: 100%;
 }
 
 
@@ -107,38 +115,41 @@ body {
 
 /* slider end */
 
-.category-info{
+.category-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.category-btn{
+.category-btn {
     background-color: #E4E6F1;
     border: 1px solid rgb(91, 85, 85);
     border-radius: 5px;
-    
+
 }
 
-.left{
+.left {
     width: 600px;
 }
 
-.post{
-    /* min-height: 600px;
-    margin: 0px; */
-    background: linear-gradient(transparent,transparent,transparent,rgb(169, 212, 226))
+.post {
+    min-height: 800px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: linear-gradient(transparent, transparent, transparent, rgb(169, 212, 226))
 }
 
-.recipe-info-left{
-    width: 370px;
+.recipe-info-left {
+    width: 390px;
     margin-right: 50px;
 }
-.recipe-info-right{
+
+.recipe-info-right {
     width: 650px;
 }
 
-.inbox-container{
+.inbox-container {
     background-color: #eaf8fd;
     position: relative;
     z-index: 1000;
@@ -147,74 +158,78 @@ body {
     overflow: hidden;
 }
 
-input[name=inbox]{
+input[name=inbox] {
     border: none;
-    outline:none;
+    outline: none;
     /* max-width: 100%; */
     flex: 1;
 
 }
 
-.link{
+.link {
     width: 380px;
 }
 
-.contact-footer{
+.contact-footer {
     gap: 15px;
 }
 
 
-.recipe-img{
-    height: 200px;
+.recipe-img {
+    height: 300px;
     width: 100%;
     position: relative;
     object-fit: cover;
     border-radius: 20px;
 }
 
-.learn-more-img{
+.learn-more-img {
     width: 100%;
-    /* height: 200px; */
     object-fit: contain;
     border-radius: 5px
-
 }
 
-.post-img{
+.post-img {
     /* height: 200px; */
     object-fit: contain;
     border-radius: 5px;
 }
 
-.delicious-img{
+.delicious-img {
     width: 100%;
     /* height: 200px; */
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 5px;
 }
 
-.category-img{
+.ad-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-img {
     width: 70px;
     /* height: 200px; */
     object-fit: contain;
     border-radius: 5px;
 }
 
-.contact-img{
+.contact-img {
     width: 80%;
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
 
-.hot-recipe-img{
+.hot-recipe-img {
     width: 20px;
     height: 20px;
     object-fit: contain;
     border-radius: 5px;
 }
 
-.hot-recipe-container{
+.hot-recipe-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -224,13 +239,14 @@ input[name=inbox]{
     border-radius: 10px;
 }
 
-.item-card{
-    background:linear-gradient(white,#E7F9FD);
+.item-card {
+    background: linear-gradient(white, #E7F9FD);
     border-radius: 20px;
     overflow: hidden;
+    min-height: 433px;
 }
 
-.user-img{
+.user-img {
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -239,11 +255,11 @@ input[name=inbox]{
     overflow: hidden;
 }
 
-.user-info{
+.user-info {
     font-size: 12px;
 }
 
-.inbox-img-left{
+.inbox-img-left {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -252,7 +268,7 @@ input[name=inbox]{
     object-fit: contain;
 }
 
-.inbox-img-right{
+.inbox-img-right {
     position: absolute;
     bottom: 0;
     right: 0px;
@@ -261,23 +277,36 @@ input[name=inbox]{
     object-fit: contain;
 }
 
-form{
+form {
     box-sizing: border-box;
     width: 100%;
 }
 
-.post-font{
-    font-size: 11px;
+.post-font {
+    font-size: 12px;
 }
 
-.dot-blue{
+.post-user-font {
+    font-size: 13px;
+}
+
+.banner-font {
+    font-size: 14px;
+}
+
+.delicious-font{
+    font-size: 18px;
+}
+
+.dot-blue {
     width: 7px;
     display: inline-block;
     height: 7px;
     background-color: skyblue;
     border-radius: 50px;
 }
-.dot-white{
+
+.dot-white {
     width: 5px;
     display: inline-block;
     height: 5px;
@@ -286,11 +315,11 @@ form{
     border-radius: 50px;
 }
 
-.container-like{
+.container-like {
     position: relative;
 }
 
-.like-img-container{
+.like-img-container {
     width: 40px;
     border-radius: 50px;
     height: 40px;
@@ -304,3 +333,50 @@ form{
     z-index: 100;
 }
 
+.category-card {
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.04);
+    text-align: center;
+    width: 120px;
+    display: inline-block;
+  }
+
+.category-breakfast {
+    background: linear-gradient(180deg, transparent,#F4F6FB 0%, #dadbe37b 100%);
+}
+
+.category-vegan {
+    background: linear-gradient(180deg,transparent, #F3FBF4 0%, #e0f5e0 100%);
+}
+
+.category-meat {
+    background: linear-gradient(180deg,transparent, #FFF6F6 0%, #fce2e2 100%);
+}
+
+.category-dessert {
+    background: linear-gradient(180deg,transparent, #FFFBF6 0%, #f7e9d8 100%);
+}
+
+.category-lunch {
+    background: linear-gradient(180deg,transparent, #FFFDF6 0%, #faf4dc 100%);
+}
+
+.category-chocolate {
+    background: linear-gradient(180deg,transparent, #F8F6FB 0%, #e9def9 100%);
+}
+
+.post-number{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(96, 93, 93);
+    font-size: 12px;
+    color: white;
+    border-radius: 20px;
+}
